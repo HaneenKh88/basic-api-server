@@ -1,6 +1,6 @@
 'use strict';
 const express = require('express');
-const validator = require('../middlewares/validator.js');
+const validator = require('../middleware/validator');
 const Food = require('../models/food');
 const food = new Food();
 const router = express.Router();
