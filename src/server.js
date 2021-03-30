@@ -18,6 +18,14 @@ app.use(cors());
 app.use('/api/v1/cloth/', clothRouter);
 app.use('/api/v1/food/', foodRouter);
 
+app.get('/', HomeHandler);
+
+function  HomeHandler(req, res) 
+ {
+    res.send('Hello World');
+ }
+
+ 
 app.use('*', notFoundHndler);
 app.use(errorHandler);
 
