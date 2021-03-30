@@ -12,6 +12,13 @@
 
 ****************************************************************************************************
 
+## UML Image:
+
+![UML](https://github.com/HaneenKh88/data-structures-and-algorithms/blob/main/code-challenges/401-CodeChellenges/assests/BinarySearch.png)
+
+
+****************************************************************************************************
+
 ## Setup:
 
 1. Clone the repository.
