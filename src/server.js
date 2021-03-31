@@ -32,7 +32,11 @@ function  HomeHandler(req, res)
 app.use('*', notFoundHndler);
 app.use(errorHandler);
 
-module.exports = {
-  server: app,
- 
+module.exports = 
+{
+    app: app,
+    start: (port) => {
+      const PORT = port || 8080;
+      app.listen(PORT, () => console.log(`Listening on ${PORT}`));
+    },
 };
