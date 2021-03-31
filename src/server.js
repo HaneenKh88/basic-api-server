@@ -5,6 +5,7 @@
 const express = require('express');
 const morgan = require('morgan');
 const cors = require('cors');
+require('dotenv').config();
 
 const clothRouter = require('./routes/clothes.js');
 const foodRouter = require('./routes/food.js');
@@ -33,8 +34,8 @@ app.use(errorHandler);
 
 module.exports = {
   server: app,
-  start: (port) => {
-    const PORT = port;
-    app.listen(PORT, () => console.log(`Listening on ${PORT}`));
+  start: () => {
+    const port = process.env.PORT;
+    app.listen(port, () => console.log(`Listening on ${port}`));
   },
 };
