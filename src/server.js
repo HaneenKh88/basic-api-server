@@ -34,7 +34,7 @@ app.use(errorHandler);
 module.exports = {
   server: app,
   start: (port) => {
-    const PORT = port || 3000;
+    const PORT = port;
     app.listen(PORT, () => console.log(`Listening on ${PORT}`));
   },
 };
